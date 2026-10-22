@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NextStep | Budget, Save & Grow</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <a href="#home">
+                Next<span>Step</span>
+            </a>
+
+        </div>
+
+        <nav aria-label="Main navigation">
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#budget">Budget</a>
+                </li>
+
+                <li>
+                    <a href="#savings">Savings</a>
+                </li>
+
+                <li>
+                    <a href="#goals">Goals</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="auth-buttons">
+
+            <button class="login-btn">
+                Login
+            </button>
+
+            <button class="signup-btn">
+                Create Account
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-heading">
+                    BUILD YOUR FINANCIAL FUTURE
+                </p>
+
+                <h1>
+                    Take Control of
+                    <span>Your Money.</span>
+                </h1>
+
+                <p>
+                    NextStep helps everyday earners track their
+                    income, manage expenses, build savings and
+                    achieve their financial goals.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#budget"
+                        class="primary-btn"
+                    >
+                        Start Planning
+                    </a>
+
+                    <a
+                        href="#how-it-works"
+                        class="secondary-btn"
+                    >
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FINANCIAL OVERVIEW -->
+
+            <div class="financial-card">
+
+                <h3>
+                    Your Financial Overview
+                </h3>
+
+                <div class="money-item">
+
+                    <p>Income</p>
+
+                    <strong id="overview-income">
+                        KES 0
+                    </strong>
+
+                </div>
+
+                <div class="money-item">
+
+                    <p>Expenses</p>
+
+                    <strong id="overview-expenses">
+                        KES 0
+                    </strong>
+
+                </div>
+
+                <div class="money-item">
+
+                    <p>Available</p>
+
+                    <strong id="overview-available">
+                        KES 0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section id="how-it-works">
+
+            <div class="section-heading">
+
+                <p>HOW NEXTSTEP WORKS</p>
+
+                <h2>
+                    Simple Tools For Better Money Decisions
+                </h2>
+
+            </div>
+
+
+            <div class="features">
+
+
+                <article id="budget">
+
+                    <div class="feature-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Budget Tracking
+                    </h3>
+
+                    <p>
+                        Understand where your money goes every
+                        month and make better spending decisions.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Track your income
+                        </li>
+
+                        <li>
+                            Record your expenses
+                        </li>
+
+                        <li>
+                            See money remaining
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <article id="savings">
+
+                    <div class="feature-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Savings Progress
+                    </h3>
+
+                    <p>
+                        Set a savings target and watch your progress
+                        grow step by step.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Create savings targets
+                        </li>
+
+                        <li>
+                            Track your progress
+                        </li>
+
+                        <li>
+                            Know how much remains
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <article id="goals">
+
+                    <div class="feature-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Financial Goals
+                    </h3>
+
+                    <p>
+                        Give your money a purpose by creating clear
+                        financial goals.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Emergency fund
+                        </li>
+
+                        <li>
+                            Business growth
+                        </li>
+
+                        <li>
+                            Personal projects
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BUDGET CALCULATOR
+        ========================== -->
+
+        <section class="budget-preview">
+
+            <div class="section-heading">
+
+                <p>BUDGET TRACKING</p>
+
+                <h2>
+                    Know Where Your Money Goes
+                </h2>
+
+            </div>
+
+
+            <div class="budget-container">
+
+
+                <form class="budget-form">
+
+                    <h3>
+                        Calculate Your Budget
+                    </h3>
+
+                    <p>
+                        Enter your monthly income and expenses.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label for="income">
+                            Monthly Income
+                        </label>
+
+                        <input
+                            type="number"
+                            id="income"
+                            placeholder="Example: 45000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="food">
+                            Food
+                        </label>
+
+                        <input
+                            type="number"
+                            id="food"
+                            placeholder="Example: 8000"
+                            min="0"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="transport">
+                            Transport
+                        </label>
+
+                        <input
+                            type="number"
+                            id="transport"
+                            placeholder="Example: 5000"
+                            min="0"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="rent">
+                            Rent
+                        </label>
+
+                        <input
+                            type="number"
+                            id="rent"
+                            placeholder="Example: 10000"
+                            min="0"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="other">
+                            Other Expenses
+                        </label>
+
+                        <input
+                            type="number"
+                            id="other"
+                            placeholder="Example: 5500"
+                            min="0"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="calculate-btn"
+                    >
+                        Calculate Budget
+                    </button>
+
+                </form>
+
+
+                <div class="budget-card">
+
+                    <h3>
+                        Your Budget Summary
+                    </h3>
+
+
+                    <div class="budget-row">
+
+                        <span>
+                            Income
+                        </span>
+
+                        <strong id="result-income">
+                            KES 0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="budget-row">
+
+                        <span>
+                            Total Expenses
+                        </span>
+
+                        <strong id="result-expenses">
+                            KES 0
+                        </strong>
+
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="budget-row total">
+
+                        <span>
+                            Money Remaining
+                        </span>
+
+                        <strong id="result-remaining">
+                            KES 0
+                        </strong>
+
+                    </div>
+
+
+                    <p id="budget-message">
+                        Enter your income and expenses
+                        to see your budget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SAVINGS CALCULATOR
+        ========================== -->
+
+        <section class="savings-preview">
+
+            <div class="section-heading">
+
+                <p>SAVINGS PROGRESS</p>
+
+                <h2>
+                    Build Your Savings Step by Step
+                </h2>
+
+            </div>
+
+
+            <div class="savings-container">
+
+
+                <form class="savings-form">
+
+                    <h3>
+                        Create Your Savings Goal
+                    </h3>
+
+                    <p>
+                        Set a target and tell NextStep how much
+                        you have already saved.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label for="savings-goal">
+                            Savings Goal
+                        </label>
+
+                        <input
+                            type="number"
+                            id="savings-goal"
+                            placeholder="Example: 50000"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="current-savings">
+                            Current Savings
+                        </label>
+
+                        <input
+                            type="number"
+                            id="current-savings"
+                            placeholder="Example: 20000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="calculate-btn"
+                    >
+                        Track My Savings
+                    </button>
+
+                </form>
+
+
+                <div class="savings-card">
+
+                    <h3>
+                        Your Savings Goal
+                    </h3>
+
+                    <p>
+                        Goal:
+                        <strong id="display-goal">
+                            KES 0
+                        </strong>
+                    </p>
+
+
+                    <h2 id="display-savings">
+                        KES 0
+                    </h2>
+
+
+                    <p id="display-percentage">
+                        0% completed
+                    </p>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            id="savings-progress"
+                        ></div>
+
+                    </div>
+
+
+                    <p id="display-remaining">
+                        KES 0 remaining
+                    </p>
+
+
+                    <!-- NEW CONNECTION -->
+
+                    <div
+                        class="saving-suggestion"
+                        id="saving-suggestion"
+                    >
+                        Calculate your budget first to
+                        see how much you could save.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section id="about">
+
+            <div class="section-heading">
+
+                <p>ABOUT NEXTSTEP</p>
+
+                <h2>
+                    Financial Growth Starts With One Step
+                </h2>
+
+            </div>
+
+            <p>
+                NextStep is designed to help everyday earners
+                make better financial decisions. Whether you are
+                a boda boda rider, mama mboga, mjengo worker,
+                small business owner or someone working toward
+                a personal dream, the goal is simple:
+                understand your money, save consistently and
+                grow financially.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <h2>
+                Your Next Financial Step Starts Today.
+            </h2>
+
+            <p>
+                Track your money. Build your savings.
+                Work toward your goals.
+            </p>
+
+            <button class="signup-btn">
+                Get Started
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            Next<span>Step</span>
+        </div>
+
+        <p>
+            Budget. Save. Grow.
+        </p>
+
+        <p>
+            &copy; 2026 NextStep. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
